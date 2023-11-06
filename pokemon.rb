@@ -16,7 +16,6 @@ class Pokemon
   end
 
 
-
   protected
   def name
     @name
