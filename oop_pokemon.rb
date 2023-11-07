@@ -3,13 +3,13 @@ require './game.rb'
 require './pokemon.rb'
 
 
- game  = Game.new
+
  # pokemon = Pokemon.new('ピカチュウ',20,10)
  pikachu = Pikachu.new
  hitokage = Hitokage.new
-
+ game  = Game.new(pikachu, hitokage)
  # game.battle(initialize, pokemon)
- game.battle(initialize, pikachu, hitokage)
+ game.battle
 
 =begin
 各ファイルに処理を分離して、メインに表示できるようにしている

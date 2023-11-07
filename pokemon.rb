@@ -1,24 +1,39 @@
 class Pokemon
-  attr_reader :name, :hp, :atk
+  attr_reader :name, :atk
+  attr_accessor :hp
+
   def initialize(name,hp,atk)
     @name = name
     @hp = hp
     @atk = atk
   end
 
-  def attack
+  def attack(target)
+   target.hp -= @atk
     p "#{@name} の攻撃！"
-    attack_message
+    attack_message(target )
   end
 
-  def  attack_message
+  def  attack_message(target)
    pass
+  end
+  
+  def is_fainted
+   return @hp <= 0
   end
 
 
   protected
   def name
     @name
+  end
+
+  def hp=(value)
+   @hp=value
+  end
+
+  def atk
+   @atk
   end
 
 end
@@ -29,8 +44,8 @@ class Pikachu < Pokemon
    super('ピカチュウ',20, 10)
   end
 
-  def attack_message
-   p '10万ボルト！'
+  def attack_message(target)
+   p "10万ボルト！#{target.send(:name)}は#{send(:atk)}ダメージをもらった！#{target.send(:name)}のHPは#{target.send(:hp)}だ。"
   end
 end
 
@@ -39,8 +54,8 @@ class Hitokage < Pokemon
    super('ヒトカゲ',18, 5)
   end
 
-  def attack_message
-   p 'ひのこ！！'
+  def attack_message(target)
+   p "ひのこ！！#{target.send(:name)}は#{send(:atk)}ダメージをもらった！#{target.send(:name)}のHPは#{target.send(:hp)}だ。"
   end
 end
 
