@@ -10,3 +10,12 @@ else
 end
 
 p b
+
+
+x = 20
+
+if x >= 10
+  p "greater"
+else
+  p "smaller"
+end
