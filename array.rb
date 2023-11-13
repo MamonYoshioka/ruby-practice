@@ -13,6 +13,7 @@ p jnames
 p "jnames配列のサイズは #{jnames.size}つ です。"
 
 p "###############"
+# eachもイテレーター
 jnames.each do |jn|
   p "名前は#{jn}。"
 end
