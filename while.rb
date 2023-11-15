@@ -5,7 +5,3 @@ while i <= 10
 end
 
 
-# timesメソッドはイテレーター（反復可能なもの）
-5.times do
-  p "hello ruby"
-end
