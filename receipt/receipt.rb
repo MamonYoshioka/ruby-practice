@@ -3,11 +3,11 @@ class Receipt
   # 店と商品に関しての情報
   def initialize(name)
     @name = name
-    @lines = []
+    @products = []
   end
 
   # 商品の配列
-  attr_writer :lines
+  attr_writer :products
   # def lines
   #   @lines= lines
   # end
@@ -15,8 +15,8 @@ class Receipt
   # 計算
   def clac
     total = 0
-    @lines.each do |line|
-      total += line[:price] * line[:num] * 1.10
+    @products.each do |product|
+      total += product[:price] * product[:num] * 1.10
     end
     total
   end
@@ -24,8 +24,8 @@ class Receipt
   # 計算結果
   def output
     p "レシート情報 : #{@name}"
-    @lines.each do |line|
-      p "商品名は#{line[:name]}、金額は #{line[:price]}で、個数は#{line[:num]}です。"
+    @products.each do |product|
+      p "商品名は#{product[:name]}、金額は #{product[:price]}で、個数は#{product[:num]}です。"
     end
     p "合計金額は#{clac}円です。"
   end
