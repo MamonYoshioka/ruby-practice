@@ -1,4 +1,4 @@
-class freezerA
+class Freeze
   def initialize(num)
     @set_temp = num.to_i
     @temp = 20
@@ -7,7 +7,7 @@ class freezerA
     power(:on)
     p "設定温度#{@set_temp}℃です。"
     p "現在の温度#{@temp}℃です。"
-    p "食品の個数は#{@foods}個です。"
+    p "食品の個数は#{@foods.size}個です。"
   end
 
   def cooler
@@ -18,7 +18,7 @@ class freezerA
   def open_door
     @temp += 3
     p "ドアの開閉により、#{@temp}℃上昇しました。"
-    p "#{@foods}個の食品があります。"
+    p "#{@foods.size}個の食品があります。"
 
     @foods.each do |food|
       p food
@@ -34,3 +34,4 @@ class freezerA
     p "電源OFF"if on_off.to_sym == :off
   end
 end
+
