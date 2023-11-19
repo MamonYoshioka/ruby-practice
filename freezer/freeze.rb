@@ -1,3 +1,5 @@
+require_relative "power"
+
 class Freeze
   def initialize(num)
     @set_temp = num.to_i
@@ -29,9 +31,6 @@ class Freeze
     @foods << shokuzai
   end
 
-  def power(on_off)
-    p "電源ON" if on_off.to_sym == :on
-    p "電源OFF"if on_off.to_sym == :off
-  end
+  include Power
 end
 
