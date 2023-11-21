@@ -39,3 +39,17 @@ unless a > b
   p "aはbより大きくない"
 end
 p "@@@@@@@@@@@@@@@@@@@@@"
+
+p "下記に文字列を入力してください"
+name = gets.chomp
+puts "Hello #{name}"
+
+if name == 'ruby'
+  puts 'Welcome'
+elsif name == 'Ruby'
+  puts "Good morning,#{name}"
+else
+  puts "Goodbye,#{name}"
+end
+
+p "@@@@@@@@@@@@@@@@@@@@@"
