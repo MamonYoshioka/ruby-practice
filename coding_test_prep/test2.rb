@@ -22,6 +22,29 @@ numbers = gets.to_i
 
 for i in 1..numbers
  if numbers % i == 0
-   p i
+   p "入力された数値の約数は..#{i}"
  end
 end
+
+
+# 問題3
+
+# Ruby
+# # 問題
+# 入力された文字列を逆順にするプログラムを作成してください。
+
+p "文字列を入力してください。"
+# str = gets.to_s
+
+# str.each do |string|
+#   str.reverse!
+#   p str
+# end
+
+str = gets.chomp
+reverse_str = ""
+str.chars.reverse.each do |string|
+  reverse_str += string
+end
+
+p reverse_str
