@@ -23,3 +23,16 @@ greeting = "Hello ruby"
 100.times do
   p greeting
 end
+
+# 次のプログラムを作って実行してください。
+
+# 1. 標準入力から整数を 1 個受け取る
+# 2. 受け取った整数の回数分、以下のメッセージを表示する
+# Hello ruby
+
+greeting = "Hello ruby"
+count = gets.to_i 
+
+count.times do
+  p greeting
+end
