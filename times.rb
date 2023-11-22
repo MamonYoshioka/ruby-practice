@@ -13,3 +13,13 @@ p "@@@@@@@@@@@@@@@@@@@"
 5.times do |i|
   p "#{i}回目の繰り返しです。！"
 end
+
+
+# 次のメッセージを 100 回表示するプログラムを作って実行してください
+# Hello ruby
+
+greeting = "Hello ruby"
+
+100.times do
+  p greeting
+end
