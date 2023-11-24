@@ -6,6 +6,6 @@ def bogo(arr)
 end
 
 
-arr = (0..10).to_a.shuffle
+arr = (0..7).to_a.shuffle
 p bogo(arr)
 
