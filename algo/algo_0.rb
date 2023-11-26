@@ -19,4 +19,4 @@ end
 # 下記の配列条件で３を探したい場合
 # テスト
 list = [1, 3, 5, 7, 9]
-puts binary_search(list, 5)
+puts binary_search(list, 3)
