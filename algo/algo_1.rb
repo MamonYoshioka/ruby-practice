@@ -8,7 +8,7 @@ def binary_search(list, target)
     mid = (low + high)/2
     if list[mid] == target
       return mid
-    elsif  lisst[mid] > target
+    elsif  list[mid] > target
       high = mid - 1
     else
       low = mid + 1
@@ -20,6 +20,6 @@ end
 
 # 下記の配列条件で３を探したい場合
 # テスト
-list = [1, 3, 5, 7, 9]
-puts binary_search(list, 3)
+list = [1,3,5,7,9]
+p binary_search(list, 3)
 
