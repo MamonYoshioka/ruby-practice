@@ -22,4 +22,3 @@ end
 # テスト
 list = [1,3,5,7,9]
 p binary_search(list, 3)
-
