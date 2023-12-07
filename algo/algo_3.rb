@@ -13,5 +13,6 @@ def bubble(array)
 end
 
 array = [5, 9, 3, 1, 2, 8, 4, 7, 6]
+# array = (0..100).to_a.shuffle
 
 p bubble(array)
