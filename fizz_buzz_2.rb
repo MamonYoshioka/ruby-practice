@@ -1,4 +1,4 @@
-
+# 内容更新
 
 (1..30).each do |numbers|
   if numbers % 15 == 0
