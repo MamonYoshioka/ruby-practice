@@ -67,3 +67,41 @@ elsif country == "italy" then puts "Ciao"
 else puts "???"
 end
 puts country
+
+# 【メソッド】
+
+def add(a,b)
+    puts a + b
+end
+
+add(10, 20)
+
+def greeting
+    puts "Hello World!!"
+end
+greeting()
+
+# def greet(country)
+#     if country == "japan"
+#         puts "こんにちは"
+#     elsif country == "italy"
+#         puts "Ciao"
+#     else
+#         puts "hello"
+#     end
+# end
+
+# greet("japan")
+# greet("italy")
+# greet("")
+# greet(nil)
+
+def greet(country)
+    return "countryを入力してください" if country.nil?
+    if country == "japan"
+        puts "こんにちは"
+    else
+        puts "hello"
+    end
+end
+greet(nil)
