@@ -38,4 +38,32 @@ puts "###"
 puts t1 && t2 || f1 && f2
 puts (t1 && t2) || (f1 && f2)
 puts t1 && (t2 || f1) && f2
+puts "###"
+#if文
+n = 11
+if n > 10
+    puts "n is bigger."
+else
+    puts "n is smaller"
+end
 
+puts n
+
+country = "italy"
+if country == "japan"
+    puts "こんにちは"
+elsif country == "us"
+    puts "hello"
+elsif country == "italy"
+    puts "Ciao"
+else
+    puts "???"
+end
+puts country
+puts "###"
+#thenを使って表現した場合
+if country == "japan" then puts "こんにちは"
+elsif country == "italy" then puts "Ciao"
+else puts "???"
+end
+puts country
