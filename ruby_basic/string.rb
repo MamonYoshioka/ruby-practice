@@ -26,11 +26,54 @@ def some_method()
     Text
 end
 puts some_method()
+
 puts "###"
 name = "Alice"
 a = <<-Text
 ようこそ、#{name}さん！
 以下のメッセージをご覧ください
 Text
-
 puts a
+
+puts "###"
+a = "Ruby"
+a.prepend(<<Text)
+Java
+Python 
+Text
+puts a
+
+puts "###"
+b = <<-Text.upcase
+Hello,
+Good-bye.
+Text
+puts b
+
+puts "###"
+c = [<<Text1,<<Text2]
+Tom
+Nancy
+Text1
+Mon 
+Bob 
+Text2
+puts c[0]
+
+#sprintfメソッド
+puts "###"
+#小数第3位まで数字を表示する文字列の書き方
+puts sprintf("%0.3f", 1.2)
+puts sprintf("%0.2f", 3.5)
+puts sprintf("%0.2f + %0.2f", 4.8, 1.5)
+
+#other
+puts "###"
+puts 123.to_s
+puts [10,20,30].join 
+puts "Hi" * 10
+puts String.new("Hello!!")
+
+puts "\u3042\u3044\u3046"
+puts "\u{41}"
+
