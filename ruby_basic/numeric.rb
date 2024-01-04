@@ -24,3 +24,15 @@ puts sprintf "%#b", (0b1010 << 1)
 #指数表現
 puts 2e-3
 
+#数値クラス
+puts 10.class
+puts 1.5.class
+
+puts 2/3
+r = 2/3r
+puts r
+puts r.class
+
+c = 0.3 - 0.5i
+puts c   
+puts c.class
