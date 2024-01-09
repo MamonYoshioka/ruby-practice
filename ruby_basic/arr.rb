@@ -42,10 +42,21 @@ p 16.divmod(3)
 p "#####"
 #ブロックという概念
 #配列の繰り返し処理
-numbers = [100,200,300,400]
+numbers = [1,2,3,]
 sum = 0
 numbers.each do |n|
   sum += n
 end
 
 p sum
+
+p "#####"
+nums = [1,2,3,4]
+sum = 0
+nums.each do |num|
+  sum_value = num.even? ? num * 10 : num
+  sum += sum_value
+end
+
+p sum
+
