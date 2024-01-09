@@ -34,6 +34,18 @@ p c
 c.delete_at(1)
 p c
 
+p "#####"
 #多重代入例
 # 16÷3を[商,余]で表現するdivmodメソッド
 p 16.divmod(3)
+
+p "#####"
+#ブロックという概念
+#配列の繰り返し処理
+numbers = [100,200,300,400]
+sum = 0
+numbers.each do |n|
+  sum += n
+end
+
+p sum
