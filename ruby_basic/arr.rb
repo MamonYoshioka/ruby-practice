@@ -60,3 +60,41 @@ end
 
 p sum
 
+p "#####"
+tests = [1,2,3,4]
+sum = 0
+sum_value = 100
+tests.each do |sum_value|
+  sum += sum_value
+end
+
+p sum
+p sum_value
+
+p "#####"
+# ブロック自体が長くない場合は{}で書くこともある。
+numbers = [1,2,3,4,5]
+sum = 0
+numbers.each { |number|
+  sum += number
+
+}
+
+p sum
+
+p "#####"
+# ブロックを使うメソッド
+numbers = [1,2,3,4,5]
+new_numbers = numbers.map {|number| number * 10}
+
+p new_numbers
+
+p "#####"
+numbers = [1,2,3,4,5,6,7,8,9,10]
+even_numbers_1 = numbers.select {|n| n.even?}
+# ブロックの戻り値が真になった場合の要素を返す
+even_numbers_2 = numbers.find {|n| n.even?}
+
+p even_numbers_1
+p even_numbers_2
+
