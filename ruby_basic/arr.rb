@@ -98,3 +98,8 @@ even_numbers_2 = numbers.find {|n| n.even?}
 p even_numbers_1
 p even_numbers_2
 
+p "#####"
+chars = ["a","b","c"]
+
+p chars.sum("")
+p chars.join("-")
